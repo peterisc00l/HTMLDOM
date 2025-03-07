@@ -6,14 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Adding JS as seperate file</p>
-    <button type="button" onclick="myFuntion()">Click me!</button>
-    <p id="demo"></p>
+    <p>Click the button to get a time-based greeting</p>
+    <button onclick="myfunction()">Try it</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        function myfunction() {
+            var greeting;
+            var time = new Data().getHours();
 
-    <script scr="script.js">
-        function myFuntion(){
-            var a = 4;
-            document.getElementById("demo").innerHTML = a*a;
+            if(time < 10) {
+            greeting = "Good morning";
+            }
+            else if (time < 20) {}
         }
     </script>
 </body>
