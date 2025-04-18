@@ -1,11 +1,23 @@
-# Python program to print a star pattern based on the number of the user
-# Get the number of rows from user
-n = int(input("Enter the number of rows :"))
-# Outer loop for each row
-for i in range(1, n+1):
-    # Inner loop for each column in the row
-  for j in range(i):
-    # Print star end with space instaed of new line
-    print('*', end=' ')
-    # After each row, print a new line 
-print()
+# This functon adds two numbers
+def add (x,y):
+    return x + y
+
+# This functon subtracts two numbers
+def subtract (x,y):
+    return x + y
+
+# This functon multiplys two numbers
+def multiply (x,y):
+    return x + y
+
+# This functon divides two number
+def divide (x,y):
+    return x + y
+
+num1 = int(input("Enter Number 1"))
+num2 = int(input("Enter Number 2"))
+
+print("Sum :", add(num1, num2))
+print("Difference:", subtract(num1, num2))
+print("Product :", multiply(num1, num2))
+print("Quotient :", divide(num1, num2))
