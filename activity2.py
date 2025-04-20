@@ -1,23 +1,30 @@
-# This functon adds two numbers
-def add (x,y):
-    return x + y
+import turtle
 
-# This functon subtracts two numbers
-def subtract (x,y):
-    return x + y
+turtle.Screen().bgcolor("Blue")
+board = turtle.Turtle()
 
-# This functon multiplys two numbers
-def multiply (x,y):
-    return x + y
+# first triangle for star
+board.forward(100) # draw base
 
-# This functon divides two number
-def divide (x,y):
-    return x + y
+board.left(120)
+board.forward(100)
 
-num1 = int(input("Enter Number 1"))
-num2 = int(input("Enter Number 2"))
+board.left(120)
+board.forward(100)
 
-print("Sum :", add(num1, num2))
-print("Difference:", subtract(num1, num2))
-print("Product :", multiply(num1, num2))
-print("Quotient :", divide(num1, num2))
+board.penup()
+board.right(150)
+board.forward(50)
+
+# second trinagle for the star
+board.pendown()
+board.right(90)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+
+turtle.done()
