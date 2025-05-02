@@ -1,30 +1,14 @@
-import turtle
+my_set = {1,2,3,4,4,4}
+print("Set :", my_set)
 
-turtle.Screen().bgcolor("Blue")
-board = turtle.Turtle()
+my_set.add(5)
+print("Updated Set:", my_set)
 
-# first triangle for star
-board.forward(100) # draw base
+set1 = my_set
+set2 = {2,4,4,6}
 
-board.left(120)
-board.forward(100)
-
-board.left(120)
-board.forward(100)
-
-board.penup()
-board.right(150)
-board.forward(50)
-
-# second trinagle for the star
-board.pendown()
-board.right(90)
-board.forward(100)
-
-board.right(120)
-board.forward(100)
-
-board.right(120)
-board.forward(100)
-
-turtle.done()
+print("/nSet 1", set1)
+print("Set 2", set2)
+print("Difference")
+print(set1.difference(set2))
+print("S")

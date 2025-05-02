@@ -1,21 +1,33 @@
-import turtle
+# Empty tuple
+my_tuple = ()
+print(my_tuple)
 
-# creating canvas
-turtle.Screen().bgcolor("aquamarine")
+# Tuple having integers
+my_tuple = (1, 2, 3)
+print(my_tuple)
 
-sc = turtle.Screen()
-sc.setup(600, 500)
+# tuple with mixed datatypes
+my_tuple = (1, "Hello", 3.4)
+print(my_tuple)
 
-turtle.title("Welcome to Turtle Window")
+# nested tuple
+my_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
-# turtle object creation
-board = turtle.Turtle()
+# Accessing tuple elements using indexing
+my_tuple = ('p','e','r','m','i','t')
+print(my_tuple[0])
+print(my_tuple[5])
 
-# creating a square
-for i in range():
-    board.forward(100)
-    board.left(45)
-    i = i+i
+# nested tuple
+n_tuple = ("mouse", [8, 4, 6], (1, 2, 3))
 
+# nested index
+print(my_tuple[0](3))
+print(my_tuple[1][1])
 
+#slicing
+print("Sliced :", my_tuple[1:4])
 
+# Iterating through tuple
+for letter in (my_tuple):
+    print("Hello", letter)
