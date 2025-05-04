@@ -1,6 +1,15 @@
-# Python program to check if a number is prime 
-# Take input from user
-num = int(input("Enter a number: "))
-# Check number is greater than 1 (since the primes are > 1)
-if num > 1 :
-    # Loop only up to square root of num for efficiecy
+class Parrot:
+
+    # instance attributes
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+# instance method
+def sing(self, song):
+    return "{} sings {}".format(self.name, song)
+
+def dance(self):
+    return "{} is now dancing".format(self.name)
+
+#
