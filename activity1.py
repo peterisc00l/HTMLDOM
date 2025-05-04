@@ -1,5 +1,12 @@
-class student:
-    grade = 10
-    print("Hi I am a student of grade", grade)
+class Employee:
 
-ob = student()
+        # Initializing (Constructor)
+        def __init__(self):
+                print('Employee created')
+
+        # Deleting (Destructor)
+        def __del__(self):
+                print('Destructor called, Employee deleted')
+
+obj = Employee()
+del obj     
