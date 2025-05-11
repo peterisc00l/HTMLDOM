@@ -1,16 +1,21 @@
-class Person:
-    def __init__(self, fname, lname):
-        self.firstname = fname
-        self.lastname = lname
+class Computer:
 
-    def printname(self):
-        print(self.firstname, self.lastname)
+    def __init__(self):
+        self.__maxprice = 900
 
-class student(Person):
-    def __init__(self, fname, lname, year):
-        super().__init__(fname, lname)
-        self.graduationyear = year
+    def sell(self):
+        print("Selling Price: {}".format(self.__maxprice))
 
-x = student("Peter", "Mbaekwe", 2034)
-x.printname()
-print(x.graduationyear)
+    def setMaxPrice(self, Price):
+        self.__maxprice = Price
+
+c = Computer()
+c.sell()
+
+# change the price
+c.__maxprice = 1000
+c.sell
+
+# using setter fuction
+c.setMaxPrice(1000)
+c.sell()
