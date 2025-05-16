@@ -1,29 +1,8 @@
-class Cat:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# open file and store file object in a variable
+file = open('Codingal.txt')
 
-    def info(self):
-        print(f"I'm a cat. My name is {self.name}. I'm {self.age}yrs old.")
+# read the contents of file
+print(file.read())
 
-    def make_sound(self):
-        print("Meow")
-
-
-class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def info(self):
-        print(f"I'm a dog. My name is {self.name}. I'm {self.age}yrs old.")
-
-    def make_sound(self):
-        print("Bark")
-
-cat1 = Cat("Dodo", 2.5)
-dog1 = Dog("Tyson", 8)
-
-for animal in (cat1, dog1):
-    animal.make_sound()
-    animal.info()
+# close the file
+file.close()
