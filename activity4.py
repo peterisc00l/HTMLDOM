@@ -1,15 +1,5 @@
-class Parrot:
-
-    # instance attributes
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-# instance method
-def sing(self, song):
-    return "{} sings {}".format(self.name, song)
-
-def dance(self):
-    return "{} is now dancing".format(self.name)
+# Program to copy odd lines of one file to another
+# open file in read mode
+fn = open('Codingal.txt','r')
 
 #

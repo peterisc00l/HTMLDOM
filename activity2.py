@@ -1,21 +1,19 @@
-class Computer:
+# open the file in read mode
+file_read = open('Codingal.txt','r')
+print("File in Read Mode -")
+print(file_read.read())
+file_read.close()
 
-    def __init__(self):
-        self.__maxprice = 900
+# open the file in write mode
+file_write = open('Codingal.txt','w')
+# write in the file
+file_write.write(" File in write mode ....")
+file_write.write("Hi I'm Peter. I'm 11yrs old")
+file_write.close()
 
-    def sell(self):
-        print("Selling Price: {}".format(self.__maxprice))
-
-    def setMaxPrice(self, Price):
-        self.__maxprice = Price
-
-c = Computer()
-c.sell()
-
-# change the price
-c.__maxprice = 1000
-c.sell
-
-# using setter fuction
-c.setMaxPrice(1000)
-c.sell()
+# open the file in append mode
+file_append = open('Codingal.txt','w')
+# append in the file
+file_append.write("/n File in append mode ....")
+file_append.write("Hi I'm Peter. I'm 11yrs old")
+file_append.close()

@@ -1,8 +1,15 @@
-# open file and store file object in a variable
-file = open('Codingal.txt')
-
-# read the contents of file
+#open file and read its contents
+file = open('Codingal.txt','r')
 print(file.read())
+file.close()
 
-# close the file
+#open file and read its beginning 8 characters
+file = open('Codingal.txt','r')
+print("/n Read in parts /n")
+print(file.read(8))
+file.close()
+
+#append your name and age in the file
+file = open('Codingal.txt','a')
+file.write(" Hi! I'm Peter and I'm 11yrs old")
 file.close()

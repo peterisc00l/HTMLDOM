@@ -1,17 +1,25 @@
-# Program to count of lines in this file
-# Opening a file
-file = open("Codingal.txt","r")
-Counter = 0
+# Program to romove lines starting with any prefix
 
-# Reading from file
-Content = file.read()
-# splitting content into lines
-# and storing them in a list
-Colist = Content.split("/n")
+file1 = open('Codingal.txt','r')
 
-for i in Colist:
-    if i:
-              Counter += 1
+file2 = open('sample_doc.txt')
 
-print("This is the numer of lines in this file")
-print(Counter)
+
+# reading each line from original
+# text file
+for line in file1.readlines():
+
+    # reading all lines that do not
+    # begin with "Coding"
+    if not (line.startswith('Coding')):
+
+            # printing those lines
+            print(line)
+
+            # storing only those lines that
+            # do not begin with "Coding"
+            file2.write(line)
+
+# close and save the files
+file2.close()
+file1.close()      
