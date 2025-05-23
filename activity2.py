@@ -1,19 +1,22 @@
-# open the file in read mode
-file_read = open('Codingal.txt','r')
-print("File in Read Mode -")
-print(file_read.read())
-file_read.close()
+# create a new file
+new_file = open('New_File.txt', 'x')
+new_file.close()
 
-# open the file in write mode
-file_write = open('Codingal.txt','w')
-# write in the file
-file_write.write(" File in write mode ....")
-file_write.write("Hi I'm Peter. I'm 11yrs old")
-file_write.close()
+# check if a file exists
+import os 
+print("Checking if my_file exists or not...")
+if os.path.exists("My_file.txt"):
+    os.remove("my_file.txt")
+else:
+    print("The file does not exist")
 
-# open the file in append mode
-file_append = open('Codingal.txt','w')
-# append in the file
-file_append.write("/n File in append mode ....")
-file_append.write("Hi I'm Peter. I'm 11yrs old")
-file_append.close()
+#create a new if it doesen't 
+my_file = open("my_file.txt", "w")
+my_file.write("Hi I'm peter")
+my_file.close()
+
+#delete file named codingal
+os.remove('Codingal.txt')
+
+#delete the folder
+os.rmdir('Folder')

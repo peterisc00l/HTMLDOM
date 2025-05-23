@@ -1,15 +1,13 @@
-#open file and read its contents
-file = open('Codingal.txt','r')
-print(file.read())
+# write in file using with()function
+with open('Codingal.txt', 'w') as file:
+    file.write("Hi I'm peter and I'm going to finish primary school")
 file.close()
 
-#open file and read its beginning 8 characters
-file = open('Codingal.txt','r')
-print("/n Read in parts /n")
-print(file.read(8))
-file.close()
-
-#append your name and age in the file
-file = open('Codingal.txt','a')
-file.write(" Hi! I'm Peter and I'm 11yrs old")
+# split file into words
+with open('Codingal.txt','r') as file:
+    data = file.readlines()
+    print("Words in the file are....")
+    for line in data:
+        word = line.split()
+        print (word)
 file.close()
