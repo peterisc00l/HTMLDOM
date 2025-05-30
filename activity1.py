@@ -1,13 +1,20 @@
-# write in file using with()function
-with open('Codingal.txt', 'w') as file:
-    file.write("Hi I'm peter and I'm going to finish primary school")
-file.close()
+from tkinker import *
 
-# split file into words
-with open('Codingal.txt','r') as file:
-    data = file.readlines()
-    print("Words in the file are....")
-    for line in data:
-        word = line.split()
-        print (word)
-file.close()
+window = Tk()
+window.title('Tkinker Sample Window')
+window.geometry('300x300')
+
+greeting = Lable(text="Hello User", fg='aquamarine', bg='blue')
+button = Button(text="Click me", bg='black', width=50)
+entry = Entry(fg="cyan", bg="blue", width=50)
+greeting.pack()
+button.pack()
+entry.pack()
+
+frame = Frame(master=window, relief=RASIED, borderwidth=5)
+frame.pack()
+lable = Lable(master=frame, text='Sample Frame')
+lable.pack()
+
+textbox = Text(fg='green', bg='yellow')
+textbox.pack()
