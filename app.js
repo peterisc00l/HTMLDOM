@@ -1,6 +1,7 @@
-var http = require('http');
+var fs = require('fs');
 
-http.createServer(function (req, res) {
-    res.write('This is my first activity in Node.js');
-    res.end();
-}).listen(8080);
+fs.writeFile('afile.txt', 'hello my name is Peter and i am 11yrs old',
+    function (err) {
+        if (err) throw err;
+        console.log('Content changed!');
+});
